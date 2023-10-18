@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    width: 100%;
+    background-color: rgb(233, 232, 232);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+.container{
+    width:85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.container .item{
+    width: 50%;
+    height: 100px;
+    background-color: cadetblue;
+    
+}
+.div1{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div4{
+    width: 100%;
+    height: 300px;
+    background-color: yellow;
+}
+.div2{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.div2 div{
+    width: 40%;
+    height: 250px;
+    background-color: darkslateblue;
+}
+.div3{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.div3 div{
+    width: 23%;
+    height: 120px;
+    background-color: thistle;
+}
+@media screen and (min-width:768px) and (max-width:1024px){
+    .container{
+        flex-direction: column;
+    }
+    .container .item{
+        width: 100%;
+        background-color: aqua;
+       }
+      .div1{
+        flex-direction: column;
+      }
+       .div1 .div4{
+        width: 100%;
+    }
+    .div2{
+        flex-direction: column;
+    }
+    .div2 div{
+        width: 100%;
+    }
+    
+    .div3 div{
+        width: 47%;
+    }
+}
+@media screen and (min-width:320px) and (max-width:768px){
+    .container{
+        flex-direction: column;
+    }
+    .container .item{
+        width: 100%;
+        background-color: violet;
+       }
+      .div1{
+        flex-direction: column;
+      }
+       .div1 .div4{
+        width: 100%;
+        background-color: slateblue;
+    }
+    .div2{
+        flex-direction: column;
+    }
+    .div2 div{
+        width: 100%;
+        background-color: skyblue;
+    }
+    .div3{
+        flex-direction: column;
+    }
+    .div3 div{
+        width: 100%;
+        background-color: darkcyan;
+    }
+}
